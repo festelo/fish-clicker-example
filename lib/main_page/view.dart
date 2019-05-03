@@ -1,6 +1,8 @@
+import 'package:fish_redux/fish_redux.dart';
 import 'package:flutter/material.dart';
+import 'state.dart';
 
-Widget mainPageView(state, dispatch, viewService) { 
+Widget mainPageView(MainState state, Dispatch dispatch, ViewService viewService)  { 
   final clickerWidget = viewService.buildComponent('clicker');
   return Scaffold(
     body: Column(
